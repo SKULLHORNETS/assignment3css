@@ -1,0 +1,157 @@
+/*global styling*/
+body {
+    background-color: #815080;
+}
+/*header styling*/
+header{
+    z-index: 9999;
+    background-color: #ead207;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+}
+header div{
+    width: auto;
+    height: 115px;
+    flex-grow: 1;
+}
+header div img{
+    width: auto;
+    height: 100%;
+    padding-left: 5%;
+}
+header nav menu {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+header nav menu li{
+    padding: 0px 10px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+header a:hover, header a:active, header a:focus, header a:visited{
+    color: #0936e8;
+}
+a {
+    text-decoration:none
+}
+/*styling for the first two sections*/
+main{
+    display: block;
+}
+
+h1 {
+    color: #42020d;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 500%;
+    font-family: 'Montserrat', sans-serif;
+    filter: drop-shadow(0 0 0.35rem #FEEBD0);
+}
+.history {
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: #e7dfdf;
+}
+h2{
+    padding: 1em;
+    background-color: #6dea6f;
+    border-radius: 25px;
+}
+.producttext {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    background-color: #815080;
+    padding: 1em;
+    border-radius: 25px;
+}
+/* SOME VIDEO SECTION STYLING SO IT BETTER LOOKS ON THE PAGE */
+#background-video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.imagetext{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    min-height: 75vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
+#imgabout img{
+    height: auto;
+    width: 20%;
+}
+.hoverimg img{
+    width: 60%;
+    height: auto;
+    filter: drop-shadow(0 0 2rem black);
+    border-radius: 12px;
+}
+.hoverimg img:hover {
+    transform: scale(1.05) rotate(-5deg);
+    transition: all linear .25s;
+    border-radius: 50px;
+    filter: drop-shadow(0 0 .75rem black);
+}
+/*products section styling*/
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,33.3%);
+    min-height: 75vh;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    margin: 0 auto;
+    max-width: 100%;
+    background-image: url(../img/background_products.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.products h2{
+    text-align: center;
+}
+#n1, #n2, #n3{
+    margin: 3%;
+    height: auto;
+    width: 95%;
+    font-family: 'Montserrat', sans-serif;
+}
+#n1 img, #n2 img, #n3 img{
+    object-fit: contain;
+    border-radius: 12px;
+    filter: drop-shadow(0 0 1rem black);
+}
+.products img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+/*footer styling*/
+footer {
+    background-color: #ecdb50;
+    display: grid;
+    height: 15vh;
+    grid-template-columns: 33% 33% 33%;
+    color: #0c0c0c;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+.social {
+    font-size: large;
+}
+.copyright {
+    text-align: right;
+}
